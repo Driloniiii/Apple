@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="16×16" href="logo.png">
+  <title>Apple</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="./index.html"><img class="logo1" src="logo.png"></a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="contact.html">Support</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+
+  </nav>
+
+  <br> <br><br><br><br><br><br><br>
+  <h1 class="text" data-fill-text="Support">Support.</h1>
+
+
+
+
+
+
+
+
+  <div id="container1" class="outter-div8">
+    <div class="inner-div7">
+
+      <div class="steveabout">
+        <br><br><br><br><br><br><br><br><br><br>
+        <h1 class="supporth1">Apple Support<br>
+          </p>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <div class="about">
+      <br><br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br>
+    </div>
+  </div>
+  <br><br><br><br>
+  <hr>
+
+  <br><br>
+
+  <h3 class="aboutparagraf">Safe and reliable repairs</h3>
+  <br><br>
+  <p class="aboutparagraf">At Apple, every product we make is built to last. We design durable, easy-to-use devices with
+    innovative features that customers depend on, all while protecting their privacy and data. Customers should have
+    access to safe, reliable, and secure repairs with genuine Apple parts if they need them.
+
+    Learn more about Apple’s approach to expanding access to safe and reliable repairs.</p>
+  <br>
+
+  <hr>
+
+  <br><br><br><br>
+  <hr>
+
+  <br><br>
+
+  <h3 class="aboutparagraf">Beware of counterfeit parts</h3>
+  <br><br>
+  <p class="aboutparagraf">Some counterfeit and third party power adapters and batteries may not be designed properly
+    and could result in safety issues. To ensure you receive a genuine Apple battery during a battery replacement, we
+    recommend visiting an Apple Store or Apple Authorized Service Provider. If you need a replacement adapter to charge
+    your Apple device, we recommend getting an Apple power adapter.
+
+    Also non-genuine replacement displays may have compromised visual quality and may fail to work correctly.
+    Apple-certified screen repairs are performed by trusted experts who use genuine Apple parts.</p>
+
+
+  <br>
+
+  <hr>
+
+  <br><br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p class="aboutparagraf">Stay Connected with Apple Support</p>
+
+  <a href="https://twitter.com/AppleSupport" target="_blank"><img class="logosupport" src="twitter.png"></a>
+  <a href="https://www.youtube.com/applesupport" target="_blank"><img class="logosupport" src="youtube.png"></a>
+
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = () => {
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = () => {
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = () => {
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+</body>
+
+</html>

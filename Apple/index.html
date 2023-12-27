@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="16×16" href="logo.png">
+  <title>Apple</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="index.html"><img class="logo1" src="logo.png"></a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="contact.html">Support</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+
+  </nav>
+
+  <br> <br><br><br><br><br><br><br>
+  <h1 class="text" data-fill-text="Apple">Apple.</h1>
+  <img class="steve" src="steve.png">
+
+  <br> <br><br><br><br><br><br><br>
+
+  <div class="outter-div1">
+    <div class="inner-div1">
+      <h1 class="indexp3t">iPad 10th Gen</h1>
+      <h2 class="indexp3">Lovable. Drawable. Magicial..</h2>
+      <a class="a1" href="https://www.apple.com/ipad-10.9/">Learn more ></a>
+
+      <img class="ipad10" src="ipad.png">
+    </div>
+  </div>
+
+  <br><br>
+  <br>
+
+
+
+
+
+  <div class="outter-div">
+    <div class="inner-div">
+      <img class="iph14" src="atv.png">
+      <h2 class="indexp2">The Apple experience.</h2>
+      <a class="a1" href="https://www.apple.com/apple-tv-4k/">Learn more ></a>
+      <br><br><br><br><br>
+      <img class="atv" src="appletv.png">
+    </div>
+  </div>
+
+  <div class="outter-div1">
+    <div class="inner-div1">
+      <img class="iph14" src="logowatch.png">
+      <br>
+      <h2 class="indexp3">A healthy leap ahead.</h2>
+      <a class="a1" href="https://www.apple.com/apple-watch-series-8/">Learn more ></a>
+
+      <img class="ipad10" src="aws8.png">
+    </div>
+  </div>
+  <br>
+  <div class="outter-div">
+    <div class="inner-div">
+      <h1 class="indexp">iPhone 14 Pro</h1>
+      <h2 class="indexp2">Pro. Beyond.</h2>
+      <a class="a1" href="https://www.apple.com/iphone-14-pro/">Learn more ></a>
+
+      <img class="iph14" src="iph14.png">
+    </div>
+  </div>
+
+
+  <div class="banner-container">
+    <div class="banner">
+      <div class="shoe">
+        <img class="airpod" src="airpod1.png" alt="Airpods">
+      </div>
+      <div class="content">
+        <span>Airpods Pro</span>
+
+        <h3>50% 0ff</h3>
+        <p>offer ends after 5 days</p>
+
+      </div>
+      <div class="women">
+        <img class="airpod" src="airpod2.webp" alt="Airpods">
+      </div>
+    </div>
+  </div>
+  <div class="about">
+    <br><br><br><br>
+    <p class="indexabout">To access and use all the features of Apple Card, you must add Apple Card to Wallet on an
+      iPhone or iPad with the latest version of iOS or iPadOS.<br>
+      Update to the latest version by going to Settings > General > Software Update. Tap Download and Install.
+      Available for qualifying applicants in the United States.<br>
+
+      Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch.
+      Learn more about how Apple Card applications are evaluated at <a class="indexabout" href="about.html">About
+        Page</a></p>
+    <div class="content">
+
+    </div>
+  </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = () => {
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = () => {
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = () => {
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+</body>
+
+</html>
